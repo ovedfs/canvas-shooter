@@ -5,7 +5,7 @@ export default class Bullet {
     this.y = y;
     this.width = 15;
     this.height = 5;
-    this.speed = 10;
+    this.speed = 5;
     this.mark = false;
   }
 
@@ -15,7 +15,7 @@ export default class Bullet {
   }
 
   draw(ctx) {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'yellow';
     ctx.fillRect(this.x, this.y, this.width, this.height);
   }
 }
