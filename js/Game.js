@@ -8,6 +8,7 @@ export default class Game {
     this.player = new Player(this, 50, 100);
     this.controller = new Controller(this);
     this.keys = [];
+    this.ammo = 10;
   }
 
   update() {

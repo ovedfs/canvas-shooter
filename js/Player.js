@@ -32,7 +32,9 @@ export default class Player {
   }
 
   shoot() {
-    this.bullets.push(new Bullet(this.game, this.x + 50, this.y + 50));
-    console.log(this.bullets);
+    if(this.game.ammo > 0) {
+      this.bullets.push(new Bullet(this.game, this.x + 50, this.y + 50))
+      this.game.ammo--;
+    };
   }
 }
